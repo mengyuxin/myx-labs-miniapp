@@ -1,0 +1,6 @@
+<view class="empty-state">
+  <view class="empty-state__mark"></view>
+  <text class="empty-state__title">{{title}}</text>
+  <text wx:if="{{message}}" class="empty-state__message">{{message}}</text>
+</view>
+

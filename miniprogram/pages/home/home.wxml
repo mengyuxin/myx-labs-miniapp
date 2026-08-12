@@ -1,0 +1,37 @@
+<view class="page home-page">
+  <view class="hero">
+    <text class="hero__label">{{profile.tagline}}</text>
+    <text class="hero__title">{{profile.name}}</text>
+    <text class="hero__copy">Digital experiments, small tools and ideas.</text>
+    <text class="hero__description">{{profile.description}}</text>
+  </view>
+
+  <view class="home-section">
+    <section-header
+      label="Featured"
+      title="Selected Projects"
+      subtitle="公开发布的数字实验与工具"
+    />
+
+    <view wx:if="{{hasFeaturedProjects}}" class="project-list">
+      <project-card
+        wx:for="{{featuredProjects}}"
+        wx:key="id"
+        project="{{item}}"
+        bind:projecttap="onProjectTap"
+      />
+    </view>
+
+    <empty-state
+      wx:else
+      title="暂无 Featured Project"
+      message="添加 featured 项目后这里会自动显示。"
+    />
+  </view>
+
+  <button class="explore-button" bindtap="onExploreProjects">
+    <text>Explore Projects</text>
+    <text>→</text>
+  </button>
+</view>
+

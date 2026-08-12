@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "About",
+  "usingComponents": {
+    "section-header": "../../components/section-header/section-header"
+  }
+}
+

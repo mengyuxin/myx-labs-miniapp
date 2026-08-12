@@ -1,0 +1,8 @@
+{
+  "name": "myx-labs-miniapp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MYX Labs native WeChat Mini Program.",
+  "scripts": {}
+}
+

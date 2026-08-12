@@ -1,0 +1,27 @@
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+  margin-bottom: 28rpx;
+}
+
+.section-header__label {
+  color: #8a6c2f;
+  font-size: 22rpx;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.section-header__title {
+  color: #171a17;
+  font-size: 40rpx;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.section-header__subtitle {
+  color: #6c6f6b;
+  font-size: 26rpx;
+}
+

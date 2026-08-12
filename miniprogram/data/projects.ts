@@ -1,0 +1,103 @@
+import type { Project } from '../types/project'
+
+export const projects: Project[] = [
+  {
+    id: 'depthloom',
+    slug: 'depthloom',
+    title: 'Depthloom',
+    summary: '裸眼立体画实验室，把图像的深度藏进纹理之中。',
+    description:
+      '一个完全运行在浏览器里的裸眼立体画生成器，也是一场关于双眼与视觉感知的实验。',
+    category: 'Experiment',
+    tags: ['Creative Coding', 'Image Tool', '3D Vision'],
+    featured: true,
+    coverImage: 'https://myx-labs.netlify.app/projects/depthloom.jpg',
+    externalUrl: 'https://myx-3d.netlify.app',
+    createdAt: '2026',
+  },
+  {
+    id: 'markdown-studio',
+    slug: 'markdown-studio',
+    title: 'MYX Markdown Studio',
+    summary: '面向长文与技术写作的 Markdown 工作台。',
+    description:
+      '支持左右分栏编辑、实时预览、Mermaid、表格、代码块、本地自动保存和 PDF、Word、HTML 导出。',
+    category: 'Tool',
+    tags: ['Markdown', 'Writing Tool', 'Export'],
+    featured: true,
+    coverImage: 'https://myx-labs.netlify.app/projects/markdown-studio.jpg',
+    externalUrl: 'https://myx-markdown.netlify.app',
+    createdAt: '2026',
+  },
+  {
+    id: 'abap',
+    slug: 'abap',
+    title: 'SAP ABAP 学习工作台',
+    summary: '把 51 章教程重组为一条可理解的学习路径。',
+    description:
+      '通过主题分组、顺序建议和快速检索，降低技术资料的导航成本。内容用于公开学习展示，不包含客户内部数据。',
+    category: 'Tool',
+    tags: ['Learning Tool', 'SAP', 'Information Architecture'],
+    featured: false,
+    coverImage: 'https://myx-labs.netlify.app/projects/abap.jpg',
+    externalUrl: 'https://myx-abap.netlify.app',
+    createdAt: '2026',
+  },
+  {
+    id: 'url-decoder',
+    slug: 'url-decoder',
+    title: 'URL Decoder',
+    summary: '中日双语 SharePoint URL 解码工具。',
+    description:
+      '粘贴复杂链接后自动还原转义字符，并生成更容易阅读和分享的简化 URL。',
+    category: 'Tool',
+    tags: ['URL Tool', 'SharePoint', 'Bilingual'],
+    featured: false,
+    coverImage: 'https://myx-labs.netlify.app/projects/url-decoder.jpg',
+    externalUrl: 'https://myx-url.netlify.app',
+    createdAt: '2026',
+  },
+  {
+    id: 'solar-system',
+    slug: 'solar-system',
+    title: 'MYX Solar System',
+    summary: '浏览器中的 3D 太阳系轨道演示。',
+    description:
+      '支持时间轴、模拟速度、标签显示、比例切换和天体导航，用交互方式观察行星运动。',
+    category: 'Experiment',
+    tags: ['3D Simulation', 'Astronomy', 'Interactive'],
+    featured: true,
+    coverImage: 'https://myx-labs.netlify.app/projects/solar-system.jpg',
+    externalUrl: 'https://myx-solar.netlify.app',
+    createdAt: '2026',
+  },
+  {
+    id: 'note',
+    slug: 'note',
+    title: '留白',
+    summary: '私密的浏览器笔记工作区。',
+    description:
+      '支持快速搜索、新建、置顶、自动保存和本机存储，把临时灵感整理成安静的个人写作空间。',
+    category: 'Tool',
+    tags: ['Note App', 'Local Storage', 'Productivity'],
+    featured: false,
+    coverImage: 'https://myx-labs.netlify.app/projects/note.jpg',
+    externalUrl: 'https://myx-note.netlify.app',
+    createdAt: '2026',
+  },
+  {
+    id: 'wnl',
+    slug: 'wnl',
+    title: '万年历',
+    summary: '中文万年历与黄历工具。',
+    description:
+      '整合公历、农历、节日、宜忌、星座运势、日期计算、择吉查询和节气信息。',
+    category: 'Tool',
+    tags: ['Calendar', 'Lunar Date', 'Almanac'],
+    featured: false,
+    coverImage: 'https://myx-labs.netlify.app/projects/wnl.jpg',
+    externalUrl: 'https://myx-wnl.netlify.app',
+    createdAt: '2026',
+  },
+]
+

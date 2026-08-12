@@ -1,0 +1,37 @@
+<view class="page projects-page">
+  <section-header
+    label="Archive"
+    title="Projects"
+    subtitle="按分类浏览公开数字实验"
+  />
+
+  <scroll-view class="category-scroll" scroll-x enhanced show-scrollbar="{{false}}">
+    <view class="category-list">
+      <button
+        wx:for="{{categories}}"
+        wx:key="*this"
+        class="category-chip {{activeCategory === item ? 'category-chip--active' : ''}}"
+        data-category="{{item}}"
+        bindtap="onCategoryTap"
+      >
+        {{item}}
+      </button>
+    </view>
+  </scroll-view>
+
+  <view wx:if="{{hasProjects}}" class="project-list">
+    <project-card
+      wx:for="{{projects}}"
+      wx:key="id"
+      project="{{item}}"
+      bind:projecttap="onProjectTap"
+    />
+  </view>
+
+  <empty-state
+    wx:else
+    title="暂无项目"
+    message="当前分类下还没有公开项目。"
+  />
+</view>
+

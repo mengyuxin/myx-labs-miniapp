@@ -1,0 +1,20 @@
+<view class="project-card" bindtap="onTapProject" wx:if="{{project}}">
+  <view class="project-card__cover" wx:if="{{hasCoverImage}}">
+    <image class="project-card__image" src="{{project.coverImage}}" mode="aspectFill" binderror="onCoverError"></image>
+  </view>
+  <view class="project-card__cover project-card__cover--empty" wx:else>
+    <text>{{project.category}}</text>
+  </view>
+
+  <view class="project-card__body">
+    <view class="project-card__meta">
+      <text>{{project.category}}</text>
+      <text wx:if="{{project.createdAt}}">{{project.createdAt}}</text>
+    </view>
+    <text class="project-card__title">{{project.title}}</text>
+    <text class="project-card__summary">{{project.summary}}</text>
+    <view class="project-card__tags" wx:if="{{project.tags.length}}">
+      <text wx:for="{{project.tags}}" wx:key="*this" class="tag">{{item}}</text>
+    </view>
+  </view>
+</view>

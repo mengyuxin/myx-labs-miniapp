@@ -1,0 +1,49 @@
+<view class="page detail-page">
+  <block wx:if="{{isFound && project}}">
+    <view class="detail-cover" wx:if="{{hasCoverImage}}">
+      <image class="detail-cover__image" src="{{project.coverImage}}" mode="aspectFill" binderror="onCoverError"></image>
+    </view>
+    <view class="detail-cover detail-cover--empty" wx:else>
+      <text>{{project.category}}</text>
+    </view>
+
+    <view class="detail-header">
+      <text class="detail-header__category">{{project.category}}</text>
+      <text class="detail-header__title">{{project.title}}</text>
+      <text class="detail-header__summary">{{project.summary}}</text>
+    </view>
+
+    <view class="detail-tags" wx:if="{{hasTags}}">
+      <text wx:for="{{project.tags}}" wx:key="*this" class="tag">{{item}}</text>
+    </view>
+
+    <view class="detail-section">
+      <text class="detail-section__title">Description</text>
+      <text class="detail-section__body">{{project.description}}</text>
+    </view>
+
+    <view class="detail-info">
+      <view class="detail-info__row">
+        <text>Project ID</text>
+        <text>{{project.id}}</text>
+      </view>
+      <view class="detail-info__row" wx:if="{{project.createdAt}}">
+        <text>Created</text>
+        <text>{{project.createdAt}}</text>
+      </view>
+    </view>
+
+    <button wx:if="{{hasExternalUrl}}" class="copy-button" bindtap="onCopyExternalUrl">
+      <text>Copy Project Link</text>
+      <text>↗</text>
+    </button>
+  </block>
+
+  <view wx:else class="not-found">
+    <empty-state
+      title="Project not found"
+      message="这个项目不存在，或链接参数已经失效。"
+    />
+    <button class="back-button" bindtap="onBackToProjects">返回 Projects</button>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Project Detail",
+  "usingComponents": {
+    "empty-state": "../../components/empty-state/empty-state"
+  }
+}
+

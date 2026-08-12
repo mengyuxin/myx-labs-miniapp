@@ -1,0 +1,6 @@
+<view class="section-header">
+  <text wx:if="{{label}}" class="section-header__label">{{label}}</text>
+  <text class="section-header__title">{{title}}</text>
+  <text wx:if="{{subtitle}}" class="section-header__subtitle">{{subtitle}}</text>
+</view>
+
